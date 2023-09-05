@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import ContactForm from "./ContactForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function Nav() {
+	return (
+		<>
+			<section>
+				<div className="Navigation">
+					<div className="logo">
+						<img src="free.png" alt="logo" />
+					</div>
+					<div className="nav-links">
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/">About Us</a>
+						</li>
+						<li>
+							<a href="/" className="active">Contact</a>
+						</li>
+						<a href="/" className="enter">
+							Log In
+						</a>
+						<a href="/" className="enter">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</section>
+			<ContactForm />
+		</>
+	);
 }
-
-export default App;
+export default Nav;
